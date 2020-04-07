@@ -1,0 +1,20 @@
+import React from "react";
+import Hero from "../componenets/Hero";
+import Banner from "../componenets/Banner";
+import { Link } from "react-router-dom";
+import RoomContainer from "../componenets/RoomsContainer";
+const Rooms = () => {
+  return (
+    <React.Fragment>
+      <Hero hero="roomsHero">
+        <Banner title="Our Rooms">
+          <Link to="/" className="btn-primary">
+            Return Home
+          </Link>
+        </Banner>
+      </Hero>
+      <RoomContainer />
+    </React.Fragment>
+  );
+};
+export default Rooms;
